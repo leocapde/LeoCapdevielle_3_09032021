@@ -1,0 +1,19 @@
+{
+  "name": "leocapdevielle_3_09032021",
+  "version": "1.0.0",
+  "description": "Project of creation website \"ohmyfood\", site of reservation in gastronomic restaurants.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leocapde/LeoCapdevielle_3_09032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leocapde/LeoCapdevielle_3_09032021/issues"
+  },
+  "homepage": "https://github.com/leocapde/LeoCapdevielle_3_09032021#readme"
+}

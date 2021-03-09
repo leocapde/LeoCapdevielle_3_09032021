@@ -1,0 +1,8 @@
+.description {
+    background-color: $color-background;
+    text-align: center;
+
+    &__heading {
+        background-color: darken($color-background, 20%);
+    }
+}
