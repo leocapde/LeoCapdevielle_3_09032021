@@ -1,3 +1,16 @@
 footer {
     background-color: darken($color-background, 75%);
+    padding: $padding-bloc;
+
+    h3 {
+        padding-left: 40px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        padding: $padding-txt;
+    }
 }

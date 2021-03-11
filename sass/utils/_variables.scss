@@ -5,8 +5,23 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background: #F7F7F7;
 
-// Buttons
+// Margin 
 
-$btn-padding: 10px;
-$btn-shadow: 5px 5px 5px gray;
-$btn-radius: 20px;
+$margin-bloc: 20px;
+$margin-txt: 2px 0 2px 0;
+
+// Padding
+
+$padding-bloc: 10px;
+$padding-btn: 10px;
+$padding-txt: 5px;
+$padding-title: 10px;
+
+// Shadow
+
+$shadow: 5px 5px 5px gray;
+
+// Raduis
+
+$radius: 20px;
+$radius-top: 20px 20px 0 0;

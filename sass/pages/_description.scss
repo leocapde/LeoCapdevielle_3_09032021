@@ -1,8 +1,23 @@
 .description {
     background-color: $color-background;
     text-align: center;
+    padding-bottom: 4*$padding-bloc;
 
     &__heading {
-        background-color: darken($color-background, 20%);
+        background-color: darken($color-background, 5%);
+        padding: $padding-bloc;
+
+        i {
+            padding: 0 $padding-txt;
+        }
+    }
+
+    &__title {
+        padding: $padding-txt 6*$padding-txt 0 6*$padding-txt;
+    }
+
+    &__txt {
+        padding: 2*$padding-txt;
+        padding-top: 0;
     }
 }

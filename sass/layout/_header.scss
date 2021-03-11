@@ -1,3 +1,8 @@
 header {
     text-align: center;
+    padding: 2*$padding-bloc $padding-bloc $padding-bloc $padding-bloc;
+
+    img {
+        width: 35%;
+    }
 }
