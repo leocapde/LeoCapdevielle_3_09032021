@@ -1,6 +1,25 @@
 .btn {
+    margin: $margin-btn;
     padding: $padding-btn;
-    box-shadow: $shadow;
-    border-radius: $radius;
+    box-shadow: $shadow-btn;
+    border-radius: $radius-btn;
     border: none;
+    color: white;
+    font-weight: bold;
+    background:
+        linear-gradient(to top left, $color-primary, transparent),
+        linear-gradient(to bottom right, $color-secondary, transparent);
+    outline-style: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 300ms;
+    }
+
+    &:active {
+        transform: translateY(4px);
+        box-shadow: $shadow-btn-active;
+        transition: all 100ms;
+    }
 }

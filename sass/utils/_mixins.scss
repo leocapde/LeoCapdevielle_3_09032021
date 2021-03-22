@@ -1,0 +1,5 @@
+@mixin color-txt ($color) {
+    @if (lightness($color) < 65%) {
+        color: white;
+    }
+}

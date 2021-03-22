@@ -1,8 +1,43 @@
 .operation {
     padding: $padding-bloc;
+}
 
-    ul {
-        list-style-type: none;
-        margin-left: -20px;
+.ope {
+    display: flex;
+    align-items: center;
+    background-color: $color-background;
+    border-radius: $radius-bloc;
+    margin: $margin-bloc;
+    padding: $padding-bloc 0;
+    box-shadow: $shadow-bloc;
+    position: relative;
+
+    &__num {
+        margin-left: -10px;
+        background-color: $color-primary;
+        border-radius: $radius-bloc;
+        padding: $padding-txt 2*$padding-txt;
+        @include color-txt ($color-primary);
+        font-size: .9em;
+    }
+
+    &__ico {
+        padding: 3*$padding-txt;
+        text-align: center;
+        color: $color-ico;
+    }
+
+    &__txt {
+        font-weight: bold;
+        position: absolute;
+        left: 65px;
+    }
+
+    &:hover {
+        background-color: lighten($color-secondary, 24%);
+
+        &>.ope__ico {
+            color: $color-primary;
+        }
     }
 }

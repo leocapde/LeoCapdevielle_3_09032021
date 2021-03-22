@@ -1,27 +1,36 @@
 // Colors
 
-$color-primary: #9356DC;
+$color-primary: #9356dc;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background: #F7F7F7;
+$color-background-footer: darken($color-background, 75%);
+$color-ico: gray;
 
 // Margin 
 
+$margin-btn: 20px;
 $margin-bloc: 20px;
 $margin-txt: 2px 0 2px 0;
 
 // Padding
 
+$padding-btn: 20px;
 $padding-bloc: 10px;
-$padding-btn: 10px;
 $padding-txt: 5px;
-$padding-title: 10px;
-
-// Shadow
-
-$shadow: 5px 5px 5px gray;
+$padding-title: 20px;
 
 // Raduis
 
-$radius: 20px;
-$radius-top: 20px 20px 0 0;
+$radius-btn: 40px;
+$radius-bloc: 20px;
+$radius-rest: 15px;
+$radius-rest-top: $radius-rest $radius-rest 0 0;
+
+// Shadow
+
+$shadow-header: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+$shadow-btn: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+$shadow-btn-active: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+$shadow-bloc: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+$shadow-bloc-active: 0 2px 5px 0 rgba(0, 0, 0, 0.1);

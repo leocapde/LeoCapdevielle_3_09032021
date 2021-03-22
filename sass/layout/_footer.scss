@@ -1,6 +1,7 @@
 footer {
-    background-color: darken($color-background, 75%);
-    padding: $padding-bloc;
+    background-color: $color-background-footer;
+    padding: $padding-bloc 0;
+    @include color-txt($color-background-footer);
 
     h3 {
         padding-left: 40px;
@@ -12,5 +13,22 @@ footer {
 
     li {
         padding: $padding-txt;
+    }
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    position: relative;
+
+    &__txt--ico {
+        position: absolute;
+        left: 25px;
+    }
+
+    &:hover {
+        // color: $color-secondary;
+        font-weight: bold;
     }
 }

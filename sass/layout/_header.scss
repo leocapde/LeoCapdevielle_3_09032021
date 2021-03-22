@@ -1,8 +1,12 @@
 header {
-    text-align: center;
-    padding: 2*$padding-bloc $padding-bloc $padding-bloc $padding-bloc;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow-header;
+    position: relative;
 
     img {
-        width: 35%;
+        width: 200px;
     }
 }
