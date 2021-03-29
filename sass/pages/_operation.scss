@@ -3,19 +3,16 @@
 }
 
 .ope {
+    @include bloc-radius ($color-background, $radius-ope);
     display: flex;
     align-items: center;
-    background-color: $color-background;
-    border-radius: $radius-bloc;
-    margin: $margin-bloc;
     padding: $padding-bloc 0;
-    box-shadow: $shadow-bloc;
     position: relative;
 
     &__num {
         margin-left: -10px;
         background-color: $color-primary;
-        border-radius: $radius-bloc;
+        border-radius: $radius-ope;
         padding: $padding-txt 2*$padding-txt;
         @include color-txt ($color-primary);
         font-size: .9em;

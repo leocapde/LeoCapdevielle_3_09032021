@@ -1,3 +1,10 @@
+@mixin bloc-radius ($background-color, $radius) {
+    background-color: $background-color;
+    border-radius: $radius;
+    margin: $margin-bloc;
+    box-shadow: $shadow-bloc;
+}
+
 @mixin color-txt ($color) {
     @if (lightness($color) < 65%) {
         color: white;

@@ -14,7 +14,8 @@
 
     &:hover {
         opacity: 0.8;
-        transition: 300ms;
+        box-shadow: $shadow-btn-hover;
+        transition: all 300ms;
     }
 
     &:active {

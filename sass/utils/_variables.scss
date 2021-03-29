@@ -5,13 +5,19 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background: #F7F7F7;
 $color-background-footer: darken($color-background, 75%);
+$color-background-none: #ffffff;
 $color-ico: gray;
+
+//Width
+
+$max-width-bloc: 450px;
 
 // Margin 
 
 $margin-btn: 20px;
 $margin-bloc: 20px;
-$margin-txt: 2px 0 2px 0;
+$margin-price: 15px;
+$margin-txt: 5px;
 
 // Padding
 
@@ -23,14 +29,18 @@ $padding-title: 20px;
 // Raduis
 
 $radius-btn: 40px;
-$radius-bloc: 20px;
+$radius-ope: 20px;
 $radius-rest: 15px;
 $radius-rest-top: $radius-rest $radius-rest 0 0;
+$radius-menu: 40px;
+$radius-menu-top: $radius-menu $radius-menu 0 0;
+$radius-food: 15px;
 
 // Shadow
 
 $shadow-header: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-$shadow-btn: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+$shadow-btn: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+$shadow-btn-hover: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
 $shadow-btn-active: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 $shadow-bloc: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 $shadow-bloc-active: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
