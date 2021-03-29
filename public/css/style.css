@@ -37,15 +37,16 @@ footer h3 {
 
 .btn {
   margin: 20px;
-  padding: 20px;
+  padding: 18px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
   border-radius: 40px;
   border: none;
   color: white;
   font-weight: bold;
-  background: linear-gradient(to top left, #9356dc, transparent), linear-gradient(to bottom right, #FF79DA, transparent);
+  background: linear-gradient(350deg, #9356dc, #FF79DA);
   outline-style: none;
   cursor: pointer;
+  width: 200px;
 }
 .btn:hover {
   opacity: 0.8;
@@ -230,10 +231,10 @@ footer li {
   background-color: #F7F7F7;
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
-  padding-bottom: 40px;
+  padding-bottom: 75px;
   position: relative;
 }
-.menu > div:not(.menu-heading) {
+.menu > div:not(:nth-child(1), :last-child) {
   margin-top: -30px;
 }
 
@@ -293,6 +294,11 @@ footer li {
 .food__descrip--price {
   font-weight: bold;
   margin: 0 15px;
+}
+
+.validate {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

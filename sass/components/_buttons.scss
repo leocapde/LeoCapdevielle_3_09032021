@@ -6,11 +6,10 @@
     border: none;
     color: white;
     font-weight: bold;
-    background:
-        linear-gradient(to top left, $color-primary, transparent),
-        linear-gradient(to bottom right, $color-secondary, transparent);
+    background: linear-gradient(350deg, $color-primary, $color-secondary);
     outline-style: none;
     cursor: pointer;
+    width: $wdith-btn;
 
     &:hover {
         opacity: 0.8;

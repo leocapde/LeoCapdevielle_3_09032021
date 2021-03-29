@@ -10,10 +10,10 @@
     background-color: $color-background;
     border-radius: $radius-menu-top;
     margin-top: -1*$radius-menu;
-    padding-bottom: $radius-menu;
+    padding-bottom: $padding-menu-bottom;
     position: relative; //Allows to put .menu over .banner
 
-    &>div:not(.menu-heading) {
+    &>div:not(:nth-child(1), :last-child) {
         margin-top: -1.5*$margin-bloc;
     }
 }
@@ -80,4 +80,9 @@
             margin: 0 $margin-price;
         }
     }
+}
+
+.validate {
+    display: flex;
+    justify-content: center;
 }
