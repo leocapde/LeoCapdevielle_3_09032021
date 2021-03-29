@@ -56,6 +56,7 @@
     @include bloc-radius ($color-background-none, $radius-food);
     padding: $padding-bloc;
     font-size: 0.9rem;
+    cursor: pointer;
 
     &__heading {
         margin: $margin-txt 0;
