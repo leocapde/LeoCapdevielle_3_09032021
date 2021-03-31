@@ -14,3 +14,31 @@
 @mixin trans-heart {
     transition: all 500ms;
 }
+
+@mixin heart-hover {
+    .heart-hover {
+        &--off {
+            @include trans-heart;
+        }
+
+        &--on {
+            opacity: 0;
+            background: linear-gradient(210deg, $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text; //For Chrome
+            @include trans-heart;
+        }
+
+        &:hover {
+            & .heart-hover--off {
+                opacity: 0;
+            }
+
+            & .heart-hover--on {
+                opacity: 1;
+                color: transparent;
+            }
+        }
+
+    }
+}

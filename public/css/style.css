@@ -211,20 +211,20 @@ footer li {
 .restaurant__txt {
   margin: 0 15px;
 }
-.restaurant__fav--off {
+.restaurant__fav .heart-hover--off {
   transition: all 500ms;
 }
-.restaurant__fav--on {
+.restaurant__fav .heart-hover--on {
   opacity: 0;
   background: linear-gradient(210deg, #9356dc, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 500ms;
 }
-.restaurant__fav:hover .restaurant__fav--off {
+.restaurant__fav .heart-hover:hover .heart-hover--off {
   opacity: 0;
 }
-.restaurant__fav:hover .restaurant__fav--on {
+.restaurant__fav .heart-hover:hover .heart-hover--on {
   opacity: 1;
   color: transparent;
 }
@@ -275,12 +275,32 @@ footer li {
   align-items: center;
   padding: 10px 20px;
   font-size: 1.2rem;
+  position: relative;
 }
 .menu-heading__title {
   font-family: "Shrikhand", cursive;
 }
-.menu-heading__ico {
-  padding-right: 10px;
+.menu-heading__ico .heart-hover--off {
+  transition: all 500ms;
+}
+.menu-heading__ico .heart-hover--on {
+  opacity: 0;
+  background: linear-gradient(210deg, #9356dc, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 500ms;
+}
+.menu-heading__ico .heart-hover:hover .heart-hover--off {
+  opacity: 0;
+}
+.menu-heading__ico .heart-hover:hover .heart-hover--on {
+  opacity: 1;
+  color: transparent;
+}
+.menu-heading__ico .fa-heart {
+  position: absolute;
+  right: 45px;
+  top: 45px;
 }
 
 .dish-categorie {
