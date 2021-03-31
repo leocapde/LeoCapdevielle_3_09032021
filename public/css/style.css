@@ -71,6 +71,15 @@ footer h3 {
   background-color: #99E2D0;
 }
 
+.new-bloc {
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: bold;
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
 header {
   height: 65px;
   display: flex;
@@ -194,11 +203,33 @@ footer li {
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
-.restaurant figure {
-  margin: 0;
+.restaurant__new {
+  position: absolute;
+  top: 20px;
+  right: 15px;
 }
 .restaurant__txt {
   margin: 0 15px;
+}
+.restaurant__fav--off {
+  transition: all 500ms;
+}
+.restaurant__fav--on {
+  opacity: 0;
+  background: linear-gradient(210deg, #9356dc, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 500ms;
+}
+.restaurant__fav:hover .restaurant__fav--off {
+  opacity: 0;
+}
+.restaurant__fav:hover .restaurant__fav--on {
+  opacity: 1;
+  color: transparent;
+}
+.restaurant figure {
+  margin: 0;
 }
 .restaurant figcaption {
   margin-top: 10px;

@@ -10,3 +10,7 @@
         color: white;
     }
 }
+
+@mixin trans-heart {
+    transition: all 500ms;
+}

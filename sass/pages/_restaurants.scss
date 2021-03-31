@@ -24,12 +24,44 @@
         border-radius: $radius-rest-top;
     }
 
-    figure {
-        margin: 0;
+    &__new {
+        position: absolute;
+        top: 20px;
+        right: 15px;
     }
 
     &__txt {
         margin: 0 15px;
+    }
+
+    &__fav {
+        &--off {
+            @include trans-heart;
+        }
+
+        &--on {
+            opacity: 0;
+            background: linear-gradient(210deg, $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text; //For Chrome
+            @include trans-heart;
+        }
+
+        &:hover {
+            & .restaurant__fav--off {
+                opacity: 0;
+            }
+
+            & .restaurant__fav--on {
+                opacity: 1;
+                color: transparent;
+            }
+        }
+
+    }
+
+    figure {
+        margin: 0;
     }
 
     figcaption {

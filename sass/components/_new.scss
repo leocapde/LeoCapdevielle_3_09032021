@@ -1,0 +1,12 @@
+.new-bloc {
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 40%);
+    font-weight: bold;
+    width: auto;
+    padding: 1*$padding-txt 2*$padding-txt;
+    border-radius: $radius-rest-new;
+
+    // &--off {
+    //     display: none;
+    // }
+}
