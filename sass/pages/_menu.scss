@@ -12,10 +12,6 @@
     margin-top: -1*$radius-menu;
     padding-bottom: $padding-menu-bottom;
     position: relative; //Allows to put .menu over .banner
-
-    &>div:not(:nth-child(1), :last-child) {
-        margin-top: -1.5*$margin-bloc;
-    }
 }
 
 .menu-heading {
@@ -28,6 +24,7 @@
 
     &__title {
         font-family: 'Shrikhand', cursive;
+        padding-right: $position-heart-right + 15px;
     }
 
     &__ico {
@@ -35,28 +32,45 @@
 
         & .fa-heart {
             position: absolute;
-            right: 45px;
+            right: $position-heart-right;
             top: 45px;
         }
     }
 }
 
-.dish-categorie {
-    display: flex;
-    flex-direction: column;
+.dish {
+    margin-top: -1.5*$margin-bloc;
 
+    &__food {
+        animation: dish-opening $dur-dish-opening ease-in-out both;
 
-    &__name {
-        text-transform: uppercase;
-        font-weight: 100;
-        font-size: 1rem;
-        margin-bottom: 0;
+        @for $i from 1 through $nb-dish {
+            &--#{$i} {
+                animation-delay: $delay-dish-opening * $i;
+            }
+        }
     }
 
-    &__bar {
-        margin-left: 20px;
-        margin-top: -15px;
+
+    &-categorie {
+        display: flex;
+        flex-direction: column;
+        animation: dish-cat-opening $dur-dish-cat-opening ease-in-out both;
+
+        &__name {
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        &__bar {
+            margin-left: 20px;
+            margin-top: -15px;
+        }
     }
+
+
 }
 
 .food {

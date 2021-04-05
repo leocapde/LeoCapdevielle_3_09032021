@@ -12,7 +12,7 @@
 }
 
 @mixin trans-heart {
-    transition: all 500ms;
+    transition: all ease-in-out $dur-heart;
 }
 
 @mixin heart-hover {
@@ -23,6 +23,7 @@
 
         &--on {
             opacity: 0;
+            color: transparent;
             background: linear-gradient(210deg, $color-primary, $color-secondary);
             background-clip: text;
             -webkit-background-clip: text; //For Chrome
@@ -36,7 +37,6 @@
 
             & .heart-hover--on {
                 opacity: 1;
-                color: transparent;
             }
         }
 

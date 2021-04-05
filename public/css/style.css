@@ -35,6 +35,26 @@ footer h3 {
   font-family: "Shrikhand", cursive;
 }
 
+@keyframes dish-cat-opening {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes dish-opening {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .btn {
   margin: 20px;
   padding: 18px;
@@ -212,21 +232,21 @@ footer li {
   margin: 0 15px;
 }
 .restaurant__fav .heart-hover--off {
-  transition: all 500ms;
+  transition: all ease-in-out 300ms;
 }
 .restaurant__fav .heart-hover--on {
   opacity: 0;
+  color: transparent;
   background: linear-gradient(210deg, #9356dc, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 500ms;
+  transition: all ease-in-out 300ms;
 }
 .restaurant__fav .heart-hover:hover .heart-hover--off {
   opacity: 0;
 }
 .restaurant__fav .heart-hover:hover .heart-hover--on {
   opacity: 1;
-  color: transparent;
 }
 .restaurant figure {
   margin: 0;
@@ -265,9 +285,6 @@ footer li {
   padding-bottom: 75px;
   position: relative;
 }
-.menu > div:not(:nth-child(1), :last-child) {
-  margin-top: -30px;
-}
 
 .menu-heading {
   display: flex;
@@ -279,23 +296,24 @@ footer li {
 }
 .menu-heading__title {
   font-family: "Shrikhand", cursive;
+  padding-right: 60px;
 }
 .menu-heading__ico .heart-hover--off {
-  transition: all 500ms;
+  transition: all ease-in-out 300ms;
 }
 .menu-heading__ico .heart-hover--on {
   opacity: 0;
+  color: transparent;
   background: linear-gradient(210deg, #9356dc, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 500ms;
+  transition: all ease-in-out 300ms;
 }
 .menu-heading__ico .heart-hover:hover .heart-hover--off {
   opacity: 0;
 }
 .menu-heading__ico .heart-hover:hover .heart-hover--on {
   opacity: 1;
-  color: transparent;
 }
 .menu-heading__ico .fa-heart {
   position: absolute;
@@ -303,9 +321,25 @@ footer li {
   top: 45px;
 }
 
+.dish {
+  margin-top: -30px;
+}
+.dish__food {
+  animation: dish-opening 400ms ease-in-out both;
+}
+.dish__food--1 {
+  animation-delay: 133.3333333333ms;
+}
+.dish__food--2 {
+  animation-delay: 266.6666666667ms;
+}
+.dish__food--3 {
+  animation-delay: 400ms;
+}
 .dish-categorie {
   display: flex;
   flex-direction: column;
+  animation: dish-cat-opening 400ms ease-in-out both;
 }
 .dish-categorie__name {
   text-transform: uppercase;
