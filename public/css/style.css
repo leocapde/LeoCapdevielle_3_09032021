@@ -328,13 +328,13 @@ footer li {
   animation: dish-opening 400ms ease-in-out both;
 }
 .dish__food--1 {
-  animation-delay: 133.3333333333ms;
+  animation-delay: 333.3333333333ms;
 }
 .dish__food--2 {
-  animation-delay: 266.6666666667ms;
+  animation-delay: 466.6666666667ms;
 }
 .dish__food--3 {
-  animation-delay: 400ms;
+  animation-delay: 600ms;
 }
 .dish-categorie {
   display: flex;
@@ -379,6 +379,44 @@ footer li {
 .food__descrip--price {
   font-weight: bold;
   margin: 0 15px;
+}
+.food-hover {
+  position: relative;
+}
+.food-hover--off {
+  transition: all ease-in-out 300ms;
+}
+.food-hover--on {
+  position: absolute;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  transition: all ease-in 300ms;
+}
+.food-hover--on .fa-check-circle {
+  margin: auto;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  color: #F7F7F7;
+  transition: opacity ease-in 300ms;
+}
+.food:hover .food-hover--off {
+  padding-right: 62.5px;
+  transition: all ease-in-out 300ms;
+}
+.food:hover .food-hover--on {
+  width: 75px;
+  transition: all ease-out 300ms;
+}
+.food:hover .food-hover--on .food-hover__check {
+  opacity: 1;
+  transform: rotate(360deg);
+  transition: all ease-out 300ms;
 }
 
 .validate {

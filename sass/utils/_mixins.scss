@@ -42,3 +42,7 @@
 
     }
 }
+
+@mixin trans-food-hover ($prop: all, $timing: ease-in-out) {
+    transition: $prop $timing $dur-food-hover;
+}

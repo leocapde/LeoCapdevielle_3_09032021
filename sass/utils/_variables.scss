@@ -11,6 +11,8 @@ $color-ico: gray;
 //Width
 
 $wdith-btn: 200px;
+$wdith-food-on: 75px;
+
 $max-width-bloc: 450px;
 
 // Margin 
@@ -39,6 +41,7 @@ $radius-rest-new: 3px;
 $radius-menu: 40px;
 $radius-menu-top: $radius-menu $radius-menu 0 0;
 $radius-food: 15px;
+$radius-food-right: 0 $radius-food $radius-food 0;
 
 // Shadow
 
@@ -65,3 +68,5 @@ $delay-dish-cat-opening: 150ms;
 $dur-dish-opening: 400ms;
 $nb-dish: 3;
 $delay-dish-opening: $dur-dish-opening/$nb-dish;
+
+$dur-food-hover: 300ms;
