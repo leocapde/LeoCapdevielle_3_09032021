@@ -1,0 +1,57 @@
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    animation: load-end $dur-loader ease-out $delay-loader both;
+
+    &__ico {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        font-size: 3rem;
+        animation: spin 2000ms linear infinite;
+        display: flex;
+
+        &--1 {
+            flex-direction: column;
+        }
+
+        & .fas {
+            margin: 80px;
+
+            &.fa-fish {
+                color: gray;
+            }
+
+            &.fa-carrot {
+                color: rgb(200, 50, 0);
+                // color: $color-secondary;
+                transform: rotate(135deg);
+            }
+
+            &.fa-bacon {
+                color: rgb(180, 55, 55);
+                // color: $color-primary;
+                transform: rotate(45deg);
+            }
+
+            &.fa-pepper-hot {
+                color: rgb(180, 0, 0);
+                // color: $color-tertiary;
+                transform: rotate(315deg);
+            }
+        }
+    }
+
+    &__center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+    }
+}

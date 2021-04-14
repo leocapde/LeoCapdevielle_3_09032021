@@ -78,16 +78,20 @@
     padding: $padding-bloc;
     font-size: 0.9rem;
     cursor: pointer;
+    white-space: nowrap; //Prevent the .food__heading and the .food__descrip--txt wrap
+    position: relative;
+
 
     &__heading {
         margin: $margin-txt 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__descrip {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        white-space: nowrap; //Prevent the .food__descrip--txt wrap
 
         &--txt {
             min-width: 0;
@@ -107,6 +111,7 @@
 
         &--off {
             @include trans-food-hover;
+
         }
 
         &--on {
