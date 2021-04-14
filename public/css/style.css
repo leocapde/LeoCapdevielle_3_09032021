@@ -451,7 +451,7 @@ footer li {
   position: relative;
 }
 .food-hover--off {
-  transition: all ease-in-out 300ms;
+  transition: all cubic-bezier(0.6, 0, 1, 0.8) 300ms;
 }
 .food-hover--on {
   position: absolute;
@@ -462,7 +462,7 @@ footer li {
   top: 0;
   right: 0;
   display: flex;
-  transition: all ease-in 300ms;
+  transition: all cubic-bezier(0.6, 0, 1, 0.8) 300ms;
 }
 .food-hover--on .fa-check-circle {
   margin: auto;
@@ -474,11 +474,11 @@ footer li {
 }
 .food:hover .food-hover--off {
   padding-right: 62.5px;
-  transition: all ease-in-out 300ms;
+  transition: all cubic-bezier(0, 0.6, 0.8, 1) 300ms;
 }
 .food:hover .food-hover--on {
   width: 75px;
-  transition: all ease-out 300ms;
+  transition: all cubic-bezier(0, 0.6, 0.8, 1) 300ms;
 }
 .food:hover .food-hover--on .food-hover__check {
   opacity: 1;

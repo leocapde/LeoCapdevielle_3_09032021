@@ -73,3 +73,8 @@ $nb-dish: 3;
 $delay-dish-opening: $dur-dish-opening/$nb-dish;
 
 $dur-food-hover: 300ms;
+
+//Timing 
+
+$food-timing-open: cubic-bezier(0, .6, .8, 1);
+$food-timing-close: cubic-bezier(.6, 0, 1, .8);
