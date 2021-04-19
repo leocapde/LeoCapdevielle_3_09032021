@@ -1,6 +1,12 @@
 .restaurants {
     background-color: $color-background;
     padding: 2*$padding-bloc;
+
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .restaurant {
@@ -8,13 +14,18 @@
     display: flex;
     flex-direction: column;
     max-width: $max-width-bloc;
-    margin: auto;
-    margin-top: $margin-bloc;
-    margin-bottom: $margin-bloc;
+    margin: $margin-bloc 0.25*$margin-bloc;
     height: auto;
     border-radius: $radius-rest;
     box-shadow: $shadow-bloc;
     position: relative;
+
+    &__empty {
+        width: $max-width-bloc; //To simulate other bloc to the justify-content:space-around
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 0; //To make invisible
+    }
 
     &__img {
         object-fit: cover;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 body {
-  max-width: 750px;
+  max-width: 1920px;
   margin: auto;
 }
 
@@ -266,19 +266,28 @@ footer li {
   background-color: #F7F7F7;
   padding: 20px;
 }
+.restaurants__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .restaurant {
   background-color: white;
   display: flex;
   flex-direction: column;
-  max-width: 450px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 350px;
+  margin: 20px 5px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   position: relative;
+}
+.restaurant__empty {
+  width: 350px;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 0;
 }
 .restaurant__img {
   object-fit: cover;
@@ -305,6 +314,9 @@ footer li {
   background-clip: text;
   -webkit-background-clip: text;
   transition: all ease-in-out 300ms;
+}
+.restaurant__fav .heart-hover:hover {
+  cursor: pointer;
 }
 .restaurant__fav .heart-hover:hover .heart-hover--off {
   opacity: 0;
@@ -349,7 +361,6 @@ footer li {
   padding-bottom: 75px;
   position: relative;
 }
-
 .menu-heading {
   display: flex;
   justify-content: space-between;
@@ -373,6 +384,9 @@ footer li {
   -webkit-background-clip: text;
   transition: all ease-in-out 300ms;
 }
+.menu-heading__ico .heart-hover:hover {
+  cursor: pointer;
+}
 .menu-heading__ico .heart-hover:hover .heart-hover--off {
   opacity: 0;
 }
@@ -384,9 +398,32 @@ footer li {
   right: 45px;
   top: 45px;
 }
+.menu-dish {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin: auto;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .menu-dish {
+    flex-direction: row;
+  }
+}
 
 .dish {
   margin-top: -30px;
+}
+@media screen and (min-width: 1001px) {
+  .dish:nth-child(1) {
+    width: 33.33%;
+  }
+  .dish:nth-child(2) {
+    width: 33.33%;
+  }
+  .dish:nth-child(3) {
+    width: 33.33%;
+  }
 }
 .dish__food {
   animation: dish-opening 400ms ease-in-out both;
@@ -467,7 +504,7 @@ footer li {
 .food-hover--on .fa-check-circle {
   margin: auto;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 0rem;
   opacity: 0;
   color: #F7F7F7;
   transition: opacity ease-in 300ms;
@@ -482,6 +519,7 @@ footer li {
 }
 .food:hover .food-hover--on .food-hover__check {
   opacity: 1;
+  font-size: 1.5rem;
   transform: rotate(360deg);
   transition: all ease-out 300ms;
 }

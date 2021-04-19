@@ -9,37 +9,59 @@
 .menu {
     background-color: $color-background;
     border-radius: $radius-menu-top;
-    margin-top: -1*$radius-menu;
+    margin-top: -1*$radius-menu; //Allows to get the .banner__img under the .menu
     padding-bottom: $padding-menu-bottom;
     position: relative; //Allows to put .menu over .banner
-}
 
-.menu-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5*$padding-title $padding-title;
-    font-size: 1.2rem;
-    position: relative;
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5*$padding-title $padding-title;
+        font-size: 1.2rem;
+        position: relative;
 
-    &__title {
-        font-family: 'Shrikhand', cursive;
-        padding-right: $position-heart-right + 15px;
+        &__title {
+            font-family: 'Shrikhand', cursive;
+            padding-right: $position-heart-right + 15px;
+        }
+
+        &__ico {
+            @include heart-hover;
+
+            & .fa-heart {
+                position: absolute;
+                right: $position-heart-right;
+                top: 45px;
+            }
+        }
     }
 
-    &__ico {
-        @include heart-hover;
+    &-dish {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin: auto;
+        flex-direction: column;
 
-        & .fa-heart {
-            position: absolute;
-            right: $position-heart-right;
-            top: 45px;
+        @media screen and (min-width: $media-menu) {
+            flex-direction: row;
         }
     }
 }
 
+
+
 .dish {
     margin-top: -1.5*$margin-bloc;
+
+    @media screen and (min-width: $media-menu + 1px) {
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                width: 33.33%;
+            }
+        }
+    }
 
     &__food {
         animation: dish-opening $dur-dish-opening ease-in-out both;
@@ -80,7 +102,8 @@
     cursor: pointer;
     white-space: nowrap; //Prevent the .food__heading and the .food__descrip--txt wrap
     position: relative;
-
+    // max-width: 1.5*$max-width-bloc;
+    // min-width: $min-width-bloc;
 
     &__heading {
         margin: $margin-txt 0;
@@ -128,7 +151,7 @@
             & .fa-check-circle {
                 margin: auto;
                 justify-content: center;
-                font-size: 1.5rem;
+                font-size: 0rem;
                 opacity: 0;
                 color: $color-background;
                 @include trans-food-hover(opacity, ease-in);
@@ -148,7 +171,7 @@
 
             & .food-hover__check {
                 opacity: 1;
-                // font-size: 1.5rem;
+                font-size: 1.5rem;
                 transform: rotate(360deg);
                 @include trans-food-hover(all, ease-out);
             }
