@@ -11,6 +11,12 @@
     }
 }
 
+@mixin bloc-clic {
+    transform: translateY(4px);
+    box-shadow: $shadow-bloc-active;
+    transition: all 100ms;
+}
+
 @mixin trans-heart {
     transition: all ease-in-out $dur-heart;
 }

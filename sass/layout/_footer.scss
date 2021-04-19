@@ -21,14 +21,18 @@ footer {
     align-items: center;
     height: 15px;
     position: relative;
+    width: max-content; //Allows to put the <a> only on the text
 
-    &__txt--ico {
+    &__ico {
         position: absolute;
-        left: 25px;
+    }
+
+    &__txt {
+        padding-left: 25px;
     }
 
     &:hover {
-        // color: $color-secondary;
+        color: $color-tertiary;
         font-weight: bold;
     }
 }

@@ -1,5 +1,12 @@
 .operation {
     padding: $padding-bloc;
+
+    &__list {
+        @media screen and (min-width: $media-list) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
 }
 
 .ope {
@@ -8,6 +15,7 @@
     align-items: center;
     padding: $padding-bloc 0;
     position: relative;
+    flex: 1;
 
     &__num {
         margin-left: -10px;
@@ -22,12 +30,13 @@
         padding: 3*$padding-txt;
         text-align: center;
         color: $color-ico;
+        position: absolute;
+        left: 25px;
     }
 
     &__txt {
         font-weight: bold;
-        position: absolute;
-        left: 65px;
+        padding-left: 60px;
     }
 
     &:hover {
