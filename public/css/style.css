@@ -288,6 +288,7 @@ footer li {
   background-color: white;
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 350px;
   margin: 20px 5px;
   height: auto;
@@ -323,7 +324,6 @@ footer li {
   opacity: 0;
   color: transparent;
   background: linear-gradient(210deg, #9356dc, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   transition: all ease-in-out 300ms;
 }
@@ -391,7 +391,6 @@ footer li {
   opacity: 0;
   color: transparent;
   background: linear-gradient(210deg, #9356dc, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   transition: all ease-in-out 300ms;
 }
